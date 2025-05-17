@@ -1,0 +1,23 @@
+[{
+  "horas": 5,
+  "instalacionDeportiva": {
+    "descripcion": "Superficie blanca con el mejor agarre",
+    "area": 253.97999999999996,
+    "tipoInstalacion": "Piscina olimpica",
+    "ancho": 10.2,
+    "valorHora": 1000,
+    "largo": 24.9,
+    "id": "NGUSE1HILX",
+    "olimpica": true
+  },
+  "socio": {
+    "direccion": "Calle la real",
+    "id": "VBLMBAI2C231",
+    "telefono": "231328138128",
+    "nombre": "Luna Martinez"
+  },
+  "valorAlquiler": 5000,
+  "fechaHoraInicio": "2025-04-27T09:00",
+  "id": "OHKH6WSJ7W",
+  "fechaHoraFin": "2025-04-27T14:00"
+}]

@@ -1,0 +1,15 @@
+poo\model\TipoCancha.class
+poo\services\Service.class
+poo\model\InstalacionDeportiva.class
+poo\model\Socio.class
+poo\helpers\Keyboard.class
+poo\helpers\Utils.class
+poo\services\AlquilerService.class
+poo\model\CanchaMultiproposito.class
+poo\App.class
+poo\model\Piscina.class
+poo\helpers\Color.class
+poo\model\CanchaTenis.class
+poo\services\InstalacionDeportivaService.class
+poo\services\SocioService.class
+poo\model\Alquiler.class

@@ -1,0 +1,38 @@
+[
+  {
+    "direccion": "123123",
+    "id": "MY99K12QKAGA",
+    "telefono": "131231231",
+    "nombre": "Alejandro Rios"
+  },
+  {
+    "direccion": "Calle la real",
+    "id": "VBLMBAI2C231",
+    "telefono": "231328138128",
+    "nombre": "Juan Alejandro"
+  },
+  {
+    "direccion": "Transversal 42 #25-47",
+    "id": "N3V5TH863PW9",
+    "telefono": "3102558364",
+    "nombre": "Emiliano"
+  },
+  {
+    "direccion": "Transversal 42 #25-47",
+    "id": "2GKOZVXICS1I",
+    "telefono": "3102558364",
+    "nombre": "Emiliano"
+  },
+  {
+    "direccion": "Transversal 42 #25-47",
+    "id": "WV2Y2JLFX7L1",
+    "telefono": "3102558364",
+    "nombre": "Emiliano"
+  },
+  {
+    "direccion": "Cra 45 # 3-2 La Pradera",
+    "id": "73YTL890SNI5",
+    "telefono": "320 7017845",
+    "nombre": "Paula Andrea"
+  }
+]

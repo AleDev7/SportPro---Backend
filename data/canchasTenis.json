@@ -1,0 +1,72 @@
+[
+  {
+    "area": 253.97999999999996,
+    "descripcion": "Superficie blanca con el mejor agarre",
+    "tipoInstalacion": "Cancha de tenis en ladrillo",
+    "ancho": 10.2,
+    "largo": 24.9,
+    "valorHora": 7000,
+    "id": "T0001",
+    "tipoCancha": "LADRILLO"
+  },
+  {
+    "area": 253.97999999999996,
+    "descripcion": "Superficie blanca con el mejor agarre",
+    "tipoInstalacion": "Cancha de tenis en ladrillo",
+    "ancho": 10.2,
+    "largo": 24.9,
+    "valorHora": 7000,
+    "id": "T0002",
+    "tipoCancha": "LADRILLO"
+  },
+  {
+    "area": 253.97999999999996,
+    "descripcion": "Superficie blanca con el mejor agarre",
+    "tipoInstalacion": "Cancha de tenis en ladrillo",
+    "ancho": 10.2,
+    "largo": 24.9,
+    "valorHora": 7000,
+    "id": "P0005",
+    "tipoCancha": "LADRILLO"
+  },
+  {
+    "area": 122.76,
+    "descripcion": "Cancha de tenis con excelente mantenimiento",
+    "tipoInstalacion": "Cancha de tenis en césped",
+    "ancho": 9.3,
+    "largo": 13.2,
+    "valorHora": 7000,
+    "id": "7YYULPJE9T",
+    "tipoCancha": "CESPED"
+  },
+  {
+    "area": 122.76,
+    "descripcion": "Cancha de tenis con excelente mantenimiento",
+    "tipoInstalacion": "Cancha de tenis en césped",
+    "ancho": 9.3,
+    "largo": 13.2,
+    "valorHora": 7000,
+    "id": "Y9175W739K",
+    "tipoCancha": "CESPED"
+  },
+  {
+    "area": 122.76,
+    "descripcion": "Cancha de tenis con excelente mantenimiento",
+    "tipoInstalacion": "Cancha de tenis en césped",
+    "ancho": 9.3,
+    "largo": 13.2,
+    "valorHora": 7000,
+    "id": "2ASQ9DIY7S",
+    "tipoCancha": "CESPED"
+  },
+  {
+    "area": 122.76,
+    "descripcion": "Cancha de tenis con excelente mantenimiento",
+    "tipoInstalacion": "Cancha de tenis en césped",
+    "ancho": 9.3,
+    "largo": 13.2,
+    "valorHora": 7000,
+    "id": "HABOMNAK51",
+    "tipoCancha": "CESPED"
+  }
+]

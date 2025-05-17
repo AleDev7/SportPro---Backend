@@ -1,0 +1,23 @@
+[
+  {
+    "area": 253.97999999999996,
+    "descripcion": "Superficie blanca con el mejor agarre",
+    "tipoInstalacion": "Piscina olimpica",
+    "ancho": 10.2,
+    "largo": 24.9,
+    "valorHora": 1000,
+    "id": "P0005",
+    "olimpica": true
+  },
+  {
+    "area": 79.2,
+    "descripcion": "La mejor cancha multiproposito de la ciudad",
+    "graderia": true,
+    "tipoInstalacion": "Cancha multiproposito Con graderia",
+    "ancho": 8,
+    "strGraderia": "Con graderia",
+    "largo": 9.9,
+    "valorHora": 5000,
+    "id": "MR2H9J58Q7"
+  }
+]

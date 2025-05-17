@@ -1,0 +1,180 @@
+// Agregue a este archivo todas y cada una de las peticiones HTTP que se requieren para pruebas
+// de lo contrario se utilizará uno por defecto con todas las peticiones de pruebas necesarias.
+// Si su archivo de pruebas no está completo, también se utilizará  el archivo por defecto.
+
+### Tenga en cuenta que debe asignar el puerto correcto de salida
+@url = http://localhost:7070
+
+### Comprobar el saludo de bienvenida
+GET {{url}}
+
+### comprobar que se tiene acceso a los tipos de canchas
+GET {{url}}/canchas/tipos
+
+### comprobar que se muestran TODAS las canchas
+GET {{url}}/canchas/todas
+    
+### comprobar que se muestra todos los socios
+GET {{url}}/socio
+
+###
+GET {{url}}/socio/id/id123456789
+
+###
+GET {{url}}/socio/indice/2
+
+###
+GET {{url}}/socio/conteo
+
+### solicitar agregar un socio
+POST {{url}}/socio
+Content-Type: application/json; charset=utf-8
+
+{
+    "nombre": "Emiliano",
+    "direccion": "Transversal 42 #25-47",
+    "telefono": "3102558364"
+}
+
+###
+DELETE {{url}}/socio/idsocioxyz
+
+###
+GET {{url}}/piscina
+
+###
+GET {{url}}/piscina/id/id123
+
+###
+GET {{url}}/piscina/conteo
+
+###
+DELETE {{url}}/piscina/id0000
+
+###
+POST {{url}}/piscina
+Content-Type: application/json; charset=utf-8
+
+{   
+    "descripcion":"Superficie blanca con el mejor agarre",
+    "ancho":10.2,
+    "largo":24.9,
+    "olimpica": true,
+    "valorHora": 1000
+}
+
+###
+DELETE {{url}}/piscina/P10
+
+###
+POST {{url}}/canchatenis
+Content-Type: application/json; charset=utf-8
+
+{
+    "descripcion":"Cancha de tenis con excelente cesped",
+    "ancho":5.8,
+    "largo":7.8,
+    "tipoCancha":"CESPED",
+    "valorHora": 7000
+}
+
+###
+POST {{url}}/canchamultiproposito
+Content-Type: application/json; charset=UTF-8
+
+{
+    "descripcion": "La mejor cancha multiproposito de la ciudad",
+    "ancho": 8.0,
+    "largo": 9.9,
+    "graderia": true,
+    "valorHora": 5000
+}
+
+###
+DELETE {{url}}/canchamultiproposito/MR2H9J58Q7
+
+###
+POST {{url}}/piscina
+Content-Type: application/json; charset=UTF-8
+
+{
+    "descripcion": "Piscina recien instalada",
+    "ancho": 9.0,
+    "largo": 7.1,
+    "olimpica": false,
+    "valorHora": 9000
+}
+
+###
+DELETE {{url}}/piscina/P5VB9J4HWT
+
+###
+DELETE {{url}}/canchatenis/NATTWXDXMA
+
+###
+DELETE {{url}}/canchamultiproposito/MR2H9J58Q7
+
+###
+POST {{url}}/alquiler
+Content-Type: application/json; charset=UTF-8
+
+{   
+    "fechaHoraInicio": "2025-04-27T09:00",
+    "fechaHoraFin": "2025-04-27T14:00",
+    "socio": "VBLMBAI2C231",
+    "instalacionDeportiva": "NGUSE1HILX"
+}
+
+###
+GET {{url}}/piscina
+
+###
+POST {{url}}/piscina
+Content-Type: application/json; charset=UTF-8
+
+{
+    "descripcion": "Piscina hermosa en villamaria",
+    "ancho": 9.3,
+    "largo": 19.2,
+    "olimpica": true
+}
+
+###
+PATCH {{url}}/socio/VBLMBAI2C231
+Content-Type: application/json; charset=utf-8
+
+{
+    "nombre": "Juan Alejandro"
+}
+
+###
+POST {{url}}/piscina
+Content-Type: application/json; charset=utf-8
+
+{
+    "descripcion": "Piscina con hermosa vista",
+    "ancho": 8.3,
+    "largo": 12.3,
+    "olimpica": true
+}
+
+###
+POST {{url}}/canchatenis
+Content-Type: application/json; charset=utf-8
+
+{
+    "descripcion": "Cancha de tenis con excelente mantenimiento",
+    "ancho": 9.3,
+    "largo": 13.2,
+    "tipoCancha": "CESPED"
+}
+
+###
+POST {{url}}/socio
+Content-Type: application/json; charset=utf-8
+
+{
+    "nombre": "Paula Andrea",
+    "direccion": "Cra 45 # 3-2 La Pradera",
+    "telefono": "320 7017845"
+}
