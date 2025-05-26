@@ -3,7 +3,6 @@ package poo.helpers;
 import org.jetbrains.annotations.NotNull;
 import org.json.JSONObject;
 
-
 import static io.javalin.apibuilder.ApiBuilder.delete;
 import static io.javalin.apibuilder.ApiBuilder.get;
 import static io.javalin.apibuilder.ApiBuilder.patch;

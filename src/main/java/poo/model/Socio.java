@@ -1,5 +1,7 @@
 package poo.model;
 
+import java.util.Objects;
+
 import org.json.JSONObject;
 
 
@@ -30,7 +32,13 @@ public class Socio {
      }
 
      public Socio(JSONObject json) {
-        this.id = json.optString("id", "CXXXX");
+        if (json.has("id")) {
+            this.id = json.getString("id");
+        } else {
+            // Generar 3 dígitos aleatorios
+            int numeros = (int)(Math.random() * 900) + 100; // genera un número entre 100 y 999
+            this.id = "SC" + numeros;
+        }
         this.nombre = json.optString("nombre", "NN");
         this.direccion = json.optString("direccion", "Direccion no registrada");
         this.telefono = json.optString("telefono", "Telefono no registrado");
@@ -113,6 +121,11 @@ public class Socio {
         if (obj == null || getClass() != obj.getClass()) return false;
         Socio socio = (Socio) obj;
         return this.id.equals(socio.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
     }
 
     public JSONObject toJSONObject() {

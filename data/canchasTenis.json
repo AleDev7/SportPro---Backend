@@ -1,72 +1,42 @@
 [
   {
-    "area": 253.97999999999996,
-    "descripcion": "Superficie blanca con el mejor agarre",
-    "tipoInstalacion": "Cancha de tenis en ladrillo",
-    "ancho": 10.2,
-    "largo": 24.9,
-    "valorHora": 7000,
-    "id": "T0001",
-    "tipoCancha": "LADRILLO"
-  },
-  {
-    "area": 253.97999999999996,
-    "descripcion": "Superficie blanca con el mejor agarre",
-    "tipoInstalacion": "Cancha de tenis en ladrillo",
-    "ancho": 10.2,
-    "largo": 24.9,
-    "valorHora": 7000,
-    "id": "T0002",
-    "tipoCancha": "LADRILLO"
-  },
-  {
-    "area": 253.97999999999996,
-    "descripcion": "Superficie blanca con el mejor agarre",
-    "tipoInstalacion": "Cancha de tenis en ladrillo",
-    "ancho": 10.2,
-    "largo": 24.9,
-    "valorHora": 7000,
-    "id": "P0005",
-    "tipoCancha": "LADRILLO"
-  },
-  {
-    "area": 122.76,
-    "descripcion": "Cancha de tenis con excelente mantenimiento",
+    "area": 194.33999999999997,
+    "descripcion": "Cancha de tenis estándar",
     "tipoInstalacion": "Cancha de tenis en césped",
-    "ancho": 9.3,
-    "largo": 13.2,
+    "ancho": 8.2,
+    "largo": 23.7,
     "valorHora": 7000,
-    "id": "7YYULPJE9T",
+    "id": "TN169",
     "tipoCancha": "CESPED"
   },
   {
-    "area": 122.76,
-    "descripcion": "Cancha de tenis con excelente mantenimiento",
-    "tipoInstalacion": "Cancha de tenis en césped",
-    "ancho": 9.3,
-    "largo": 13.2,
+    "area": 188,
+    "descripcion": "Cancha de tenis con iluminación nocturna",
+    "tipoInstalacion": "Cancha de tenis en ladrillo",
+    "ancho": 8,
+    "largo": 23.5,
     "valorHora": 7000,
-    "id": "Y9175W739K",
-    "tipoCancha": "CESPED"
+    "id": "TN190",
+    "tipoCancha": "LADRILLO"
   },
   {
-    "area": 122.76,
-    "descripcion": "Cancha de tenis con excelente mantenimiento",
-    "tipoInstalacion": "Cancha de tenis en césped",
-    "ancho": 9.3,
-    "largo": 13.2,
+    "area": 157.5,
+    "descripcion": "Cancha de tenis semiprofesional",
+    "tipoInstalacion": "Cancha de tenis en ladrillo",
+    "ancho": 7.5,
+    "largo": 21,
     "valorHora": 7000,
-    "id": "2ASQ9DIY7S",
-    "tipoCancha": "CESPED"
+    "id": "TN631",
+    "tipoCancha": "LADRILLO"
   },
   {
-    "area": 122.76,
-    "descripcion": "Cancha de tenis con excelente mantenimiento",
+    "area": 194.33999999999997,
+    "descripcion": "Cancha de tenis profesional",
     "tipoInstalacion": "Cancha de tenis en césped",
-    "ancho": 9.3,
-    "largo": 13.2,
+    "ancho": 8.2,
+    "largo": 23.7,
     "valorHora": 7000,
-    "id": "HABOMNAK51",
+    "id": "TN711",
     "tipoCancha": "CESPED"
   }
 ]

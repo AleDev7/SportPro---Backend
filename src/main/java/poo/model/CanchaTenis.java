@@ -2,8 +2,6 @@ package poo.model;
 
 import org.json.JSONObject;
 
-import poo.helpers.Utils;
-
 public class CanchaTenis extends InstalacionDeportiva {
 
     private TipoCancha tipoCancha;
@@ -34,7 +32,9 @@ public class CanchaTenis extends InstalacionDeportiva {
         if (json.has("id")) {
             this.id = json.getString("id");
         } else {
-            this.id = Utils.getRandomKey(10); // o la longitud que desees
+            // Generar 3 dígitos aleatorios
+            int numeros = (int)(Math.random() * 900) + 100; // genera un número entre 100 y 999
+            this.id = "TN" + numeros;
         }
         this.ancho = json.getDouble("ancho");
         this.largo = json.getDouble("largo");

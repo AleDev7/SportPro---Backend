@@ -4,8 +4,6 @@ import java.util.Objects;
 
 import org.json.JSONObject;
 
-import poo.helpers.Utils;
-
 public class CanchaMultiproposito extends InstalacionDeportiva {
 
     private boolean graderia;
@@ -36,14 +34,16 @@ public class CanchaMultiproposito extends InstalacionDeportiva {
         if (json.has("id")) {
             this.id = json.getString("id");
         } else {
-            this.id = Utils.getRandomKey(10); // o la longitud que desees
+            // Generar 3 dígitos aleatorios para el ID con prefijo "CM"
+            int numeros = (int)(Math.random() * 900) + 100; // genera un número entre 100 y 999
+            this.id = "CM" + numeros;
         }
         this.ancho = json.getDouble("ancho");
         this.largo = json.getDouble("largo");
         this.descripcion = json.getString("descripcion");
         this.valorHora = 5000;
 
-        // Verifica si el JSON tiene el campo "olimpica" antes de asignarlo
+        // Verifica si el JSON tiene el campo "graderia" antes de asignarlo
         this.graderia = json.has("graderia") && json.getBoolean("graderia");
     }
 
@@ -57,11 +57,11 @@ public class CanchaMultiproposito extends InstalacionDeportiva {
     }
 
     public String getStrGraderia() {
-        // devuelve "con gradería " o "sin gradería";
-        if (graderia = true) {
-            return "Con graderia";
+        // devuelve "Con graderia" o "Sin graderia"
+        if (graderia) {
+            return "con graderia";
         } else {
-            return "Sin graderia";
+            return "sin graderia";
         }
     }
 
@@ -101,7 +101,7 @@ public class CanchaMultiproposito extends InstalacionDeportiva {
 
     @Override
     public String getTipoInstalacion() {
-        return "Cancha multiproposito " + getStrGraderia();
+        return "Multiproposito" + " " + getStrGraderia();
     }
 
     @Override
@@ -117,13 +117,8 @@ public String toString() {
 
     @Override
     public JSONObject toJSONObject() {
-        JSONObject json = new JSONObject();
-        json.put("id", id);
-        json.put("ancho", ancho);
-        json.put("largo", largo);
-        json.put("descripcion", descripcion);
+        JSONObject json = super.toJSONObject();
         json.put("graderia", graderia);
-        json.put("valorHora", valorHora);
         return json;
     }
 
@@ -132,12 +127,15 @@ public String toString() {
         if (this == obj) return true;
         if (obj == null || getClass() != obj.getClass()) return false;
         CanchaMultiproposito that = (CanchaMultiproposito) obj;
-        return Double.compare(that.ancho, ancho) == 0 &&
-               Double.compare(that.largo, largo) == 0 &&
-               graderia == that.graderia &&
-               Double.compare(that.valorHora, valorHora) == 0 &&
-               Objects.equals(id, that.id) &&
-               Objects.equals(descripcion, that.descripcion);
+        return Objects.equals(id, that.id);
     }
 
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
+    }
 }
+    
+    
+
+

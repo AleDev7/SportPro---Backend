@@ -1,23 +1,72 @@
-[{
-  "horas": 5,
-  "instalacionDeportiva": {
-    "descripcion": "Superficie blanca con el mejor agarre",
-    "area": 253.97999999999996,
-    "tipoInstalacion": "Piscina olimpica",
-    "ancho": 10.2,
-    "valorHora": 1000,
-    "largo": 24.9,
-    "id": "NGUSE1HILX",
-    "olimpica": true
+[
+  {
+    "horas": 5,
+    "instalacionDeportiva": {
+      "descripcion": "Superficie blanca con el mejor agarre",
+      "area": 253.97999999999996,
+      "tipoInstalacion": "Piscina olimpica",
+      "ancho": 10.2,
+      "valorHora": 15000,
+      "largo": 24.9,
+      "id": "NGUSE1HILX",
+      "olimpica": true
+    },
+    "socio": {
+      "direccion": "Calle la real",
+      "id": "SC795",
+      "telefono": "231328138128",
+      "nombre": "Luna Martinez"
+    },
+    "valorAlquiler": 75000,
+    "fechaHoraInicio": "2025-04-27T09:00",
+    "id": "OHKH6WSJ7W",
+    "fechaHoraFin": "2025-04-27T14:00"
   },
-  "socio": {
-    "direccion": "Calle la real",
-    "id": "VBLMBAI2C231",
-    "telefono": "231328138128",
-    "nombre": "Luna Martinez"
+  {
+    "horas": 5,
+    "instalacionDeportiva": {
+      "descripcion": "Piscina pequeña cubierta",
+      "area": 72,
+      "tipoInstalacion": "Piscina olimpica",
+      "ancho": 6,
+      "valorHora": 15000,
+      "largo": 12,
+      "id": "PS615",
+      "olimpica": true
+    },
+    "socio": {
+      "direccion": "Transversal 42 #25-47",
+      "id": "2GKOZVXICS1I",
+      "telefono": "3102558364",
+      "nombre": "Emiliano"
+    },
+    "valorAlquiler": 75000,
+    "fechaHoraInicio": "2025-05-26T10:45",
+    "id": "OTO00N9DAN",
+    "fechaHoraFin": "2025-05-26T15:45"
   },
-  "valorAlquiler": 5000,
-  "fechaHoraInicio": "2025-04-27T09:00",
-  "id": "OHKH6WSJ7W",
-  "fechaHoraFin": "2025-04-27T14:00"
-}]
+  {
+    "horas": 7,
+    "instalacionDeportiva": {
+      "descripcion": "Cancha multiproposito con techo",
+      "area": 100.80000000000001,
+      "graderia": true,
+      "tipoInstalacion": "Multiproposito Con graderia",
+      "ancho": 8.4,
+      "strGraderia": "Con graderia",
+      "valorHora": 5000,
+      "largo": 12,
+      "id": "CM001"
+    },
+    "socio": {
+      "direccion": "Transversal 42 #25-47",
+      "id": "X3LOZ0TKX90K",
+      "telefono": "3104558364",
+      "nombre": "Florinda"
+    },
+    "valorAlquiler": 35000,
+    "fechaHoraInicio": "2025-05-26T10:00",
+    "id": "WX88VDLX4J",
+    "fechaHoraFin": "2025-05-26T17:00"
+  }
+]

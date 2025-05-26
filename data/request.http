@@ -31,9 +31,9 @@ POST {{url}}/socio
 Content-Type: application/json; charset=utf-8
 
 {
-    "nombre": "Emiliano",
-    "direccion": "Transversal 42 #25-47",
-    "telefono": "3102558364"
+    "nombre": "Orlando Alarcon",
+    "direccion": "Pradera 42 #25-47",
+    "telefono": "3109158364"
 }
 
 ###
@@ -61,6 +61,7 @@ Content-Type: application/json; charset=utf-8
     "largo":24.9,
     "olimpica": true,
     "valorHora": 1000
+    
 }
 
 ###
@@ -87,7 +88,8 @@ Content-Type: application/json; charset=UTF-8
     "ancho": 8.0,
     "largo": 9.9,
     "graderia": true,
-    "valorHora": 5000
+    "valorHora": 5000,
+    "tipoInstalacion": "multiproposito"
 }
 
 ###
@@ -177,4 +179,544 @@ Content-Type: application/json; charset=utf-8
     "nombre": "Paula Andrea",
     "direccion": "Cra 45 # 3-2 La Pradera",
     "telefono": "320 7017845"
+}
+
+###
+POST {{url}}/alquiler
+Content-Type: application/json; charset=UTF-8
+
+{   
+    "fechaHoraInicio": "2025-04-27T09:00",
+    "fechaHoraFin": "2025-05-27T14:00",
+    "socio": "N3V5TH863PW9",
+    "instalacionDeportiva": "NGUSE1HILX"
+}
+
+###
+POST {{url}}/canchatenis
+Content-Type: application/json; charset=utf-8
+
+{
+    "descripcion": "Cancha de tenis con gran vista",
+    "ancho": 3.4,
+    "largo": 7.2,
+    "tipoCancha": "CESPED",
+    "tipoInstalacion": "canchaTenis"
+}
+
+###
+POST {{url}}/piscina
+Content-Type: application/json; charset=utf-8
+
+{
+    "descripcion": "Piscina con hermosos pabellones exteriores",
+    "ancho": 4.4,
+    "largo": 8.9,
+    "olimpica": true
+    
+}
+
+### Prueba POST para cancha de tenis con tipoInstalacion
+POST {{url}}/canchatenis
+Content-Type: application/json; charset=utf-8
+
+{
+    "descripcion": "Cancha de tenis de prueba con tipoInstalacion",
+    "ancho": 6.5,
+    "largo": 12.0,
+    "tipoCancha": "CESPED",
+    "valorHora": 8000,
+    "tipoInstalacion": "canchaTenis"
+}
+
+###
+
+### Prueba POST para piscina con tipoInstalacion
+POST {{url}}/piscina
+Content-Type: application/json; charset=utf-8
+
+{
+    "descripcion": "Piscina de prueba con tipoInstalacion",
+    "ancho": 10.0,
+    "largo": 20.0,
+    "olimpica": true,
+    "valorHora": 12000,
+    "tipoInstalacion": "piscina"
+}
+
+###
+
+### Prueba POST para cancha multipropósito con tipoInstalacion
+POST {{url}}/canchamultiproposito
+Content-Type: application/json; charset=utf-8
+
+{
+    "descripcion": "Cancha multipropósito de prueba con tipoInstalacion",
+    "ancho": 15.0,
+    "largo": 25.0,
+    "graderia": true,
+    "valorHora": 9000,
+    "tipoInstalacion": "multiproposito"
+}
+
+### Prueba POST para cancha multipropósito con tipoInstalacion
+POST {{url}}/canchamultiproposito
+Content-Type: application/json; charset=utf-8
+
+{
+    "descripcion": "Cancha multipropósito de prueba con tipoInstalacion",
+    "ancho": 10.0,
+    "largo": 12.0,
+    "graderia": true,
+    "valorHora": 5000,
+    "tipoInstalacion": "multiproposito"
+}
+
+### Prueba POST para cancha multipropósito con tipoInstalacion
+POST {{url}}/canchamultiproposito
+Content-Type: application/json; charset=utf-8
+
+{
+    "descripcion": "Multiproposito final",
+    "ancho": 10.0,
+    "largo": 12.0,
+    "graderia": true,
+    "valorHora": 5000,
+    "tipoInstalacion": "multiproposito"
+}
+
+###
+POST {{url}}/piscina
+Content-Type: application/json; charset=utf-8
+
+{
+    "descripcion": "Piscina de prueba con tipoInstalacion",
+    "ancho": 10.0,
+    "largo": 20.0,
+    "olimpica": true,
+    "valorHora": 12000,
+    "tipoInstalacion": "piscina"
+}
+
+###
+POST {{url}}/piscina
+Content-Type: application/json; charset=utf-8
+
+{
+    "descripcion": "Piscina cubierta climatizada",
+    "ancho": 12.5,
+    "largo": 25.0,
+    "olimpica": true,
+    "valorHora": 18000,
+    "tipoInstalacion": "piscina"
+}
+
+###
+POST {{url}}/canchatenis
+Content-Type: application/json; charset=utf-8
+
+{
+    "descripcion": "Cancha de tenis profesional",
+    "ancho": 8.2,
+    "largo": 23.7,
+    "tipoCancha": "CESPED",
+    "valorHora": 7000,
+    "tipoInstalacion": "canchaTenis"
+}
+
+###
+POST {{url}}/canchatenis
+Content-Type: application/json; charset=utf-8
+
+{
+    "descripcion": "Cancha de tenis semiprofesional",
+    "ancho": 7.5,
+    "largo": 21.0,
+    "tipoCancha": "LADRILLO",
+    "valorHora": 7000,
+    "tipoInstalacion": "canchaTenis"
+}
+
+###
+POST {{url}}/canchatenis
+Content-Type: application/json; charset=utf-8
+
+{
+    "descripcion": "Cancha de tenis para principiantes",
+    "ancho": 6.0,
+    "largo": 18.0,
+    "tipoCancha": "SINTETICA",
+    "valorHora": 7000,
+    "tipoInstalacion": "canchaTenis"
+}
+
+###
+POST {{url}}/canchatenis
+Content-Type: application/json; charset=utf-8
+
+{
+    "descripcion": "Cancha de tenis techada",
+    "ancho": 8.0,
+    "largo": 22.0,
+    "tipoCancha": "CESPED",
+    "valorHora": 7000,
+    "tipoInstalacion": "canchaTenis"
+}
+
+###
+POST {{url}}/canchatenis
+Content-Type: application/json; charset=utf-8
+
+{
+    "descripcion": "Cancha de tenis con gradería",
+    "ancho": 8.5,
+    "largo": 24.0,
+    "tipoCancha": "LADRILLO",
+    "valorHora": 7000,
+    "tipoInstalacion": "canchaTenis"
+}
+
+###
+POST {{url}}/canchatenis
+Content-Type: application/json; charset=utf-8
+
+{
+    "descripcion": "Cancha de tenis al aire libre",
+    "ancho": 7.8,
+    "largo": 23.0,
+    "tipoCancha": "SINTETICA",
+    "valorHora": 7000,
+    "tipoInstalacion": "canchaTenis"
+}
+
+###
+POST {{url}}/canchatenis
+Content-Type: application/json; charset=utf-8
+
+{
+    "descripcion": "Cancha de tenis para torneos",
+    "ancho": 8.3,
+    "largo": 24.5,
+    "tipoCancha": "CESPED",
+    "valorHora": 7000,
+    "tipoInstalacion": "canchaTenis"
+}
+
+###
+POST {{url}}/canchatenis
+Content-Type: application/json; charset=utf-8
+
+{
+    "descripcion": "Cancha de tenis con iluminación nocturna",
+    "ancho": 8.0,
+    "largo": 23.5,
+    "tipoCancha": "LADRILLO",
+    "valorHora": 7000,
+    "tipoInstalacion": "canchaTenis"
+}
+
+###
+POST {{url}}/canchatenis
+Content-Type: application/json; charset=utf-8
+
+{
+    "descripcion": "Cancha de tenis para niños",
+    "ancho": 5.5,
+    "largo": 12.0,
+    "tipoCancha": "SINTETICA",
+    "valorHora": 7000,
+    "tipoInstalacion": "canchaTenis"
+}
+
+###
+POST {{url}}/canchatenis
+Content-Type: application/json; charset=utf-8
+
+{
+    "descripcion": "Cancha de tenis estándar",
+    "ancho": 8.2,
+    "largo": 23.7,
+    "tipoCancha": "CESPED",
+    "valorHora": 7000,
+    "tipoInstalacion": "canchaTenis"
+}
+
+###
+POST {{url}}/piscina
+Content-Type: application/json; charset=utf-8
+
+{
+    "descripcion": "Piscina olímpica principal",
+    "ancho": 25.0,
+    "largo": 50.0,
+    "olimpica": true,
+    "valorHora": 15000,
+    "tipoInstalacion": "piscina"
+}
+
+###
+POST {{url}}/piscina
+Content-Type: application/json; charset=utf-8
+
+{
+    "descripcion": "Piscina recreativa familiar",
+    "ancho": 10.0,
+    "largo": 20.0,
+    "olimpica": false,
+    "valorHora": 15000,
+    "tipoInstalacion": "piscina"
+}
+
+###
+POST {{url}}/piscina
+Content-Type: application/json; charset=utf-8
+
+{
+    "descripcion": "Piscina olímpica secundaria",
+    "ancho": 20.0,
+    "largo": 40.0,
+    "olimpica": true,
+    "valorHora": 15000,
+    "tipoInstalacion": "piscina"
+}
+
+###
+POST {{url}}/piscina
+Content-Type: application/json; charset=utf-8
+
+{
+    "descripcion": "Piscina para niños",
+    "ancho": 5.0,
+    "largo": 10.0,
+    "olimpica": false,
+    "valorHora": 15000,
+    "tipoInstalacion": "piscina"
+}
+
+###
+POST {{url}}/piscina
+Content-Type: application/json; charset=utf-8
+
+{
+    "descripcion": "Piscina olímpica climatizada",
+    "ancho": 22.0,
+    "largo": 44.0,
+    "olimpica": true,
+    "valorHora": 15000,
+    "tipoInstalacion": "piscina"
+}
+
+###
+POST {{url}}/piscina
+Content-Type: application/json; charset=utf-8
+
+{
+    "descripcion": "Piscina de entrenamiento",
+    "ancho": 8.0,
+    "largo": 16.0,
+    "olimpica": false,
+    "valorHora": 15000,
+    "tipoInstalacion": "piscina"
+}
+
+###
+POST {{url}}/piscina
+Content-Type: application/json; charset=utf-8
+
+{
+    "descripcion": "Piscina olímpica exterior",
+    "ancho": 21.0,
+    "largo": 42.0,
+    "olimpica": true,
+    "valorHora": 15000,
+    "tipoInstalacion": "piscina"
+}
+
+###
+POST {{url}}/piscina
+Content-Type: application/json; charset=utf-8
+
+{
+    "descripcion": "Piscina pequeña cubierta",
+    "ancho": 6.0,
+    "largo": 12.0,
+    "olimpica": false,
+    "valorHora": 15000,
+    "tipoInstalacion": "piscina"
+}
+
+###
+POST {{url}}/piscina
+Content-Type: application/json; charset=utf-8
+
+{
+    "descripcion": "Piscina olímpica para competencias",
+    "ancho": 23.0,
+    "largo": 46.0,
+    "olimpica": true,
+    "valorHora": 15000,
+    "tipoInstalacion": "piscina"
+}
+
+###
+POST {{url}}/piscina
+Content-Type: application/json; charset=utf-8
+
+{
+    "descripcion": "Piscina de relajación",
+    "ancho": 7.0,
+    "largo": 14.0,
+    "olimpica": false,
+    "valorHora": 15000,
+    "tipoInstalacion": "piscina"
+}
+
+### Cancha multipropósito 1
+POST {{url}}/canchamultiproposito
+Content-Type: application/json; charset=utf-8
+
+{
+    "descripcion": "Cancha multipropósito 1",
+    "ancho": 10.0,
+    "largo": 20.0,
+    "graderia": true,
+    "valorHora": 5000,
+    "tipoInstalacion": "multiproposito"
+}
+
+### Cancha multipropósito 2
+POST {{url}}/canchamultiproposito
+Content-Type: application/json; charset=utf-8
+
+{
+    "descripcion": "Cancha multipropósito 2",
+    "ancho": 12.0,
+    "largo": 18.0,
+    "graderia": false,
+    "valorHora": 5000,
+    "tipoInstalacion": "multiproposito"
+}
+
+### Cancha multipropósito 3
+POST {{url}}/canchamultiproposito
+Content-Type: application/json; charset=utf-8
+
+{
+    "descripcion": "Cancha multipropósito 3",
+    "ancho": 11.0,
+    "largo": 19.0,
+    "graderia": true,
+    "valorHora": 5000,
+    "tipoInstalacion": "multiproposito"
+}
+
+### Cancha multipropósito 4
+POST {{url}}/canchamultiproposito
+Content-Type: application/json; charset=utf-8
+
+{
+    "descripcion": "Cancha multipropósito 4",
+    "ancho": 13.0,
+    "largo": 21.0,
+    "graderia": false,
+    "valorHora": 5000,
+    "tipoInstalacion": "multiproposito"
+}
+
+### Cancha multipropósito 5
+POST {{url}}/canchamultiproposito
+Content-Type: application/json; charset=utf-8
+
+{
+    "descripcion": "Cancha multipropósito 5",
+    "ancho": 14.0,
+    "largo": 22.0,
+    "graderia": true,
+    "valorHora": 5000,
+    "tipoInstalacion": "multiproposito"
+}
+
+### Cancha multipropósito 6
+POST {{url}}/canchamultiproposito
+Content-Type: application/json; charset=utf-8
+
+{
+    "descripcion": "Cancha multipropósito 6",
+    "ancho": 15.0,
+    "largo": 23.0,
+    "graderia": false,
+    "valorHora": 5000,
+    "tipoInstalacion": "multiproposito"
+}
+
+### Cancha multipropósito 7
+POST {{url}}/canchamultiproposito
+Content-Type: application/json; charset=utf-8
+
+{
+    "descripcion": "Cancha multipropósito 7",
+    "ancho": 16.0,
+    "largo": 24.0,
+    "graderia": true,
+    "valorHora": 5000,
+    "tipoInstalacion": "multiproposito"
+}
+
+### Cancha multipropósito 8
+POST {{url}}/canchamultiproposito
+Content-Type: application/json; charset=utf-8
+
+{
+    "descripcion": "Cancha multipropósito 8",
+    "ancho": 17.0,
+    "largo": 25.0,
+    "graderia": false,
+    "valorHora": 5000,
+    "tipoInstalacion": "multiproposito"
+}
+
+### Cancha multipropósito 9
+POST {{url}}/canchamultiproposito
+Content-Type: application/json; charset=utf-8
+
+{
+    "descripcion": "Cancha multipropósito 9",
+    "ancho": 18.0,
+    "largo": 26.0,
+    "graderia": true,
+    "valorHora": 5000,
+    "tipoInstalacion": "multiproposito"
+}
+
+### Cancha multipropósito 10
+POST {{url}}/canchamultiproposito
+Content-Type: application/json; charset=utf-8
+
+{
+    "descripcion": "Cancha multipropósito 10",
+    "ancho": 19.0,
+    "largo": 27.0,
+    "graderia": false,
+    "valorHora": 5000,
+    "tipoInstalacion": "multiproposito"
+}
+
+###
+POST {{url}}/socio
+Content-Type: application/json; charset=utf-8
+
+{
+    "nombre": "Adriana Alarcon",
+    "direccion": "Remansos 42 #25-47",
+    "telefono": "3249158364"
+}
+
+### solicitar agregar un socio
+POST {{url}}/socio
+Content-Type: application/json; charset=utf-8
+
+{
+    "nombre": "Jaider Alarcon",
+    "direccion": "Cali 01 #31-47",
+    "telefono": "3042349384"
 }

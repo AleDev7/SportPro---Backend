@@ -154,6 +154,8 @@ public class Alquiler {
         json.put("id", id);
         json.put("fechaHoraInicio", fechaHoraInicio.toString());
         json.put("fechaHoraFin", fechaHoraFin.toString());
+        json.put("horas", getHoras());
+        json.put("valorAlquiler", getValorAlquiler());
         json.put("socio", socio.toJSONObject());
         json.put("instalacionDeportiva", instalacionDeportiva.toJSONObject());
         return json;

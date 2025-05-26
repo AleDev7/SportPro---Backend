@@ -4,8 +4,6 @@ import java.io.IOException;
 
 import org.json.JSONObject;
 
-import poo.helpers.Utils;
-
 public class Piscina extends InstalacionDeportiva {
 
     private boolean olimpica;
@@ -36,14 +34,16 @@ public class Piscina extends InstalacionDeportiva {
         if (json.has("id")) {
             this.id = json.getString("id");
         } else {
-            this.id = Utils.getRandomKey(10); // o la longitud que desees
+            // Generar 3 dígitos aleatorios para el ID con prefijo "PS"
+            int numeros = (int)(Math.random() * 900) + 100; // genera un número entre 100 y 999
+            this.id = "PS" + numeros;
         }
         this.ancho = json.getDouble("ancho");
         this.largo = json.getDouble("largo");
         if (json.has("area")) {
             this.area = json.getDouble("area");
         } else {
-            this.area = getArea(); // o la longitud que desees
+            this.area = getArea();
         }
         this.descripcion = json.getString("descripcion");
         this.valorHora = 15000;
@@ -62,6 +62,7 @@ public class Piscina extends InstalacionDeportiva {
          json.put("descripcion", descripcion);
          json.put("olimpica", olimpica);
          json.put("valorHora", valorHora);
+         json.put("tipoInstalacion", getTipoInstalacion() ); // <-- Agregado aquí
          return json;
      }
      
@@ -123,6 +124,5 @@ public class Piscina extends InstalacionDeportiva {
 
     
 }
-
 
 

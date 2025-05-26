@@ -1,4 +1,3 @@
-
 package poo.helpers;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -57,6 +56,10 @@ public class Utils {
 
     return generatedString;
   }
+
+  public static String getRandomKey(String prefix, int length) {
+    return prefix + getRandomKey(length - prefix.length());
+}
 
   public static boolean OverlapSchedules(LocalDateTime fechaHora1Inicio, LocalDateTime fechaHora1Fin,
   LocalDateTime fechaHora2Inicio, LocalDateTime fechaHora2Fin) {

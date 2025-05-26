@@ -6,26 +6,8 @@
     "nombre": "Alejandro Rios"
   },
   {
-    "direccion": "Calle la real",
-    "id": "VBLMBAI2C231",
-    "telefono": "231328138128",
-    "nombre": "Juan Alejandro"
-  },
-  {
-    "direccion": "Transversal 42 #25-47",
-    "id": "N3V5TH863PW9",
-    "telefono": "3102558364",
-    "nombre": "Emiliano"
-  },
-  {
     "direccion": "Transversal 42 #25-47",
     "id": "2GKOZVXICS1I",
-    "telefono": "3102558364",
-    "nombre": "Emiliano"
-  },
-  {
-    "direccion": "Transversal 42 #25-47",
-    "id": "WV2Y2JLFX7L1",
     "telefono": "3102558364",
     "nombre": "Emiliano"
   },
@@ -34,5 +16,29 @@
     "id": "73YTL890SNI5",
     "telefono": "320 7017845",
     "nombre": "Paula Andrea"
+  },
+  {
+    "direccion": "Transversal 42 #25-47",
+    "id": "X3LOZ0TKX90K",
+    "telefono": "3104558364",
+    "nombre": "Florinda"
+  },
+  {
+    "direccion": "Pradera 42 #25-47",
+    "id": "5MJ8DB3GPH8F",
+    "telefono": "3109158364",
+    "nombre": "Orlando Alarcon"
+  },
+  {
+    "direccion": "Cali 01 #31-47",
+    "id": "2XTZ4S0UCRXX",
+    "telefono": "3042349384",
+    "nombre": "Jaider Alarcon"
+  },
+  {
+    "direccion": "Cundinamarca #31-3",
+    "id": "2ASQ3SIY7SA2",
+    "telefono": "313 23312392",
+    "nombre": "Oscar Lataza"
   }
 ]
